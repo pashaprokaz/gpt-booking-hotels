@@ -68,7 +68,7 @@ address: Address C
 
 # Используемая модель и данные
 Модель (в данном случае qwen 7b) была дообучена на синтетических данных.
-Полученная модель доступна на [huggingface](https://huggingface.co/pashaprokaz/qwen-7b-instruct-hotel-booking-4bit-v2)
+Полученная модель доступна на [huggingface](https://huggingface.co/pashaprokaz/qwen-7b-instruct-hotel-booking-4bit-v2).
 
 Код для генерации данных в файле generate_dataset.ipynb, в нем используются несколько open source моделей (qwen 7b и qwen 72b) для генерации вариантов ответа, а модель-судья (qwen 72b) выбирает и по необходимости дополняет лучший вариант.
 
