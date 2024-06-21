@@ -22,7 +22,7 @@
 }
 ```
 
-3. По отсутствующим в запросе пользователя параметрам (здесь это checkin_date, checkout_date, adults_number) пользователю указывается какую информацию нужно указать в запросе:
+3. По отсутствующим в запросе пользователя параметрам (здесь это checkin_date, checkout_date, adults_number) пользователю объясняется какую информацию нужно указать в запросе:
 
 ```Can you provide me with the missing booking parameters: checkin_date, checkout_date, adults_number?```
 
