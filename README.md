@@ -2,6 +2,9 @@
 Тестовый проект, в котором GPT выполняет роль ассистента, способного забронировать отель
 Модель работает на английском языке.
 
+# Demo
+[Google Colab](https://colab.research.google.com/drive/1dgFhlSbSAHsxxX6Api24uohhq30kfKpG?usp=sharing)
+
 # Основная идея
 Бронирование происходит в несколько шагов: 
 1. Пользователь вводит параметры отеля в свободной форме, например "Find a hotel in Moscow for the next week"
