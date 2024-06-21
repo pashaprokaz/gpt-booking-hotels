@@ -1,0 +1,652 @@
+[
+    {
+        "instruction": "I want to book a hotel in Seoul with a view of the city, check-in on May 1st, check-out on May 6th, for a couple.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Seoul', 'checkin_date': '2024-05-01', 'checkout_date': '2024-05-06', 'adults_number': 2, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I'm looking for hotels in Vienna that offer free breakfast and are located near the city center from May 5 to 9, suitable for two adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Vienna', 'checkin_date': '2024-05-05', 'checkout_date': '2024-05-09', 'adults_number': 2, 'min_rating': 0, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I need a hotel in Toronto for a group of 8 people, 4 adults and 4 children, for the period of September 30 to October 5.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Toronto', 'checkin_date': '2024-09-30', 'checkout_date': '2024-10-05', 'adults_number': 4, 'children_number': 4}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel with a pool in Cancun for the period between January 5 and 12; it should have at least four stars.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Cancun', 'checkin_date': '2024-01-05', 'checkout_date': '2024-01-12', 'min_rating': 4, 'order_by': 'rating', 'adults_number': 1, 'children_number': 0, 'min_price': 0, 'max_price': 0}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel in New Orleans that accepts pets. The stay is from January 1 to January 5. The hotel should have a rating of at least 8/10.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'New Orleans', 'checkin_date': '2024-01-01', 'checkout_date': '2024-01-05', 'adults_number': 1, 'children_number': 0, 'min_rating': 8, 'min_price': None, 'max_price': None, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Can you find a hotel with at least four stars in Rome that offers airport shuttle service?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome', 'min_rating': 4, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Find me a hotel in Vienna with a 8 rating, check-in on February 15, check-out on February 20, for 2 guests.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Vienna', 'checkin_date': '2024-02-15', 'checkout_date': '2024-02-20', 'adults_number': 2, 'min_rating': 8}}"
+    },
+    {
+        "instruction": "I need a hotel in Rome with a spa and a restaurant, for 1 guest, from April 1 to April 5.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome', 'checkin_date': '2024-04-01', 'checkout_date': '2024-04-05', 'adults_number': 1, 'children_number': 0, 'min_rating': 0, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I need a hotel in Berlin that's pet-friendly and has free Wi-Fi.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'order_by': 'popularity', 'min_price': 0}}"
+    },
+    {
+        "instruction": "Can you find me a hotel with free Wi-Fi and parking facilities in Berlin for the period from January 10 to 15?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-01-10', 'checkout_date': '2024-01-15', 'adults_number': 1, 'children_number': 0, 'order_by': 'popularity', 'min_rating': 7, 'min_price': 50}}"
+    },
+    {
+        "instruction": "I'm looking for a luxurious hotel in Dubai for 2 adults from November 1 to 6, the rating should be at least 9.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Dubai', 'checkin_date': '2024-11-01', 'checkout_date': '2024-11-06', 'adults_number': 2, 'children_number': 0, 'min_rating': 9, 'min_price': None, 'max_price': None, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I want to book a hotel in Istanbul for the period from November 1 to November 5, could you find me something near the tourist area?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Istanbul', 'checkin_date': '2024-11-01', 'checkout_date': '2024-11-05', 'adults_number': 1, 'children_number': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Find me a hotel in Vienna for the period from February 1 to February 7, with a rating of at least 9.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Vienna', 'checkin_date': '2024-02-01', 'checkout_date': '2024-02-07', 'min_rating': 9, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Can you find me a hotel in Barcelona with a rating of at least 8.0 for the period from September 15th to 18th?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Barcelona', 'checkin_date': '2024-09-15', 'checkout_date': '2024-09-18', 'min_rating': 8.0, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I need a hotel in San Francisco for a business trip, check-in on July 1st, check-out on July 5th, within a budget of $300 per night for a single occupant.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'San Francisco', 'checkin_date': '2024-07-01', 'checkout_date': '2024-07-05', 'adults_number': 1, 'children_number': 0, 'max_price': 300, 'order_by': 'price'}}"
+    },
+    {
+        "instruction": "Book the most economical hotel in Dubai for a single guest from November 25 to December 1.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Dubai', 'checkin_date': '2024-11-25', 'checkout_date': '2024-12-01', 'adults_number': 1, 'children_number': 0, 'min_rating': None, 'min_price': None, 'max_price': None, 'order_by': 'price'}}"
+    },
+    {
+        "instruction": "Find me a hotel in Rome for 2 adults and 2 children from July 10 to July 15, with a price under $200 per night.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome', 'checkin_date': '2024-07-10', 'checkout_date': '2024-07-15', 'adults_number': 2, 'children_number': 2, 'max_price': 200, 'order_by': 'price'}}"
+    },
+    {
+        "instruction": "Book me a hotel in Istanbul with a minimum of 7 rating for one guest, checking in on May 22 and checking out on May 29.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Istanbul', 'checkin_date': '2024-05-22', 'checkout_date': '2024-05-29', 'adults_number': 1, 'children_number': 0, 'min_rating': 7, 'min_price': None, 'max_price': None, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I need a budget-friendly hotel in Berlin for 2 adults, check-in October 1st, check-out October 3rd.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-10-01', 'checkout_date': '2024-10-03', 'adults_number': 2, 'children_number': 0, 'min_rating': 0, 'min_price': 0, 'max_price': 100, 'order_by': 'price'}}"
+    },
+    {
+        "instruction": "Find me hotels in Bangkok that offer spa services, suitable for three guests staying from June 1st to June 4th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Bangkok', 'checkin_date': '2024-06-01', 'checkout_date': '2024-06-04', 'adults_number': 3, 'children_number': 0, 'min_rating': 0, 'min_price': 0, 'max_price': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Book me a hotel in Berlin from April 15 to April 17, I'm traveling alone.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-04-15', 'checkout_date': '2024-04-17', 'adults_number': 1, 'children_number': 0, 'min_rating': None, 'min_price': None, 'max_price': None, 'order_by': None}}"
+    },
+    {
+        "instruction": "Find me hotels in Lisbon that are within walking distance of the city center for my solo trip next month.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Lisbon', 'checkin_date': '2024-07-01', 'checkout_date': '2024-07-05', 'adults_number': 1, 'order_by': 'popularity', 'min_price': 60, 'children_number': 0, 'min_rating': 0, 'max_price': None}}"
+    },
+    {
+        "instruction": "Book a hotel in Berlin from January 3rd to 7th. I'm a solo traveler.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-01-03', 'checkout_date': '2024-01-07', 'adults_number': 1, 'children_number': 0, 'min_rating': None, 'min_price': None, 'max_price': None, 'order_by': None}}"
+    },
+    {
+        "instruction": "I need a hotel with a private beach access in Phuket for my honeymoon starting on January 3rd; it should have at least 4 stars.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Phuket', 'checkin_date': '2024-01-03', 'checkout_date': None, 'adults_number': 2, 'children_number': 0, 'min_rating': 4, 'order_by': 'rating', 'min_price': None, 'max_price': None}}"
+    },
+    {
+        "instruction": "Help me find a hotel in Rome with a rating of at least 8, for the period from October 1 to October 5.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome', 'checkin_date': '2024-10-01', 'checkout_date': '2024-10-05', 'min_rating': 8}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel in Rome with a rating of at least 8.5 from September 5 to September 10 for two adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome', 'checkin_date': '2024-09-05', 'checkout_date': '2024-09-10', 'adults_number': 2, 'min_rating': 8.5}}"
+    },
+    {
+        "instruction": "Could you assist me in finding a hotel in Istanbul for 3 guests from September 20 to 25, with a minimum of 3 stars?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Istanbul', 'checkin_date': '2024-09-20', 'checkout_date': '2024-09-25', 'adults_number': 3, 'children_number': 0, 'min_rating': 3, 'min_price': None, 'max_price': None, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Find a 5-star hotel in Cape Town near the beach, for 2 adults and 1 child, check-in June 28th, check-out July 5th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Cape Town', 'checkin_date': '2024-06-28', 'checkout_date': '2024-07-05', 'adults_number': 2, 'children_number': 1, 'min_rating': 5, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Book me a hotel with family rooms in Vienna from December 23rd to December 28th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Vienna', 'checkin_date': '2024-12-23', 'checkout_date': '2024-12-28', 'adults_number': None, 'children_number': None}}"
+    },
+    {
+        "instruction": "Find me hotels with free Wi-Fi and breakfast included in Tokyo during my stay from December 15 to 20.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'checkin_date': '2024-12-15', 'checkout_date': '2024-12-20', 'adults_number': 2, 'children_number': 0, 'min_price': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I want to book a hotel in Amsterdam for 1 guest from September 10 to September 15, the hotel should have a gym.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Amsterdam', 'checkin_date': '2024-09-10', 'checkout_date': '2024-09-15', 'adults_number': 1, 'children_number': 0, 'min_rating': 7}}"
+    },
+    {
+        "instruction": "I need a hotel in Dubai with a private beach access and multiple swimming pools for my stay from July 10 to 17.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Dubai', 'checkin_date': '2024-07-10', 'checkout_date': '2024-07-17', 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I need a family-friendly hotel in London for the period between October 2 and 7, accommodating two adults and one child.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'checkin_date': '2024-10-02', 'checkout_date': '2024-10-07', 'adults_number': 2, 'children_number': 1}}"
+    },
+    {
+        "instruction": "I'm looking for a family-friendly hotel in London for two adults and three kids, staying from May 1 to May 10.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'checkin_date': '2024-05-01', 'checkout_date': '2024-05-10', 'adults_number': 2, 'children_number': 3}}"
+    },
+    {
+        "instruction": "Find me a five-star hotel in London, budget is not a constraint.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'min_rating': 5, 'order_by': 'popularity', 'min_price': 0, 'max_price': 99999}}"
+    },
+    {
+        "instruction": "I need a hotel in Berlin that offers free Wi-Fi, suitable for two adults from March 3rd to 6th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-03-03', 'checkout_date': '2024-03-06', 'adults_number': 2, 'children_number': 0, 'min_rating': 0, 'min_price': 0, 'max_price': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Can you find me a 4-star hotel in Rome that's not too expensive, checking in on June 10 and out on June 17?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome', 'checkin_date': '2024-06-10', 'checkout_date': '2024-06-17', 'min_rating': 4, 'order_by': 'price', 'adults_number': 1}}"
+    },
+    {
+        "instruction": "I need a hotel in Berlin with easy access to public transportation, suitable for three guests staying from March 25 to 30.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-03-25', 'checkout_date': '2024-03-30', 'adults_number': 3, 'children_number': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Help me find a hotel in Buenos Aires with a rating of at least 9, for two adults and two children, from",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Buenos Aires', 'checkin_date': '2024-06-18', 'checkout_date': None, 'adults_number': 2, 'children_number': 2, 'min_rating': 9, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I need a family-friendly hotel in London for the period between October 2 and 7; we're two adults and two children.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'checkin_date': '2024-10-02', 'checkout_date': '2024-10-07', 'adults_number': 2, 'children_number': 2}}"
+    },
+    {
+        "instruction": "Can you find a hotel with free Wi-Fi and parking facilities in London for the period of February 3-7?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'checkin_date': '2024-02-03', 'checkout_date': '2024-02-07', 'adults_number': 1, 'children_number': 0, 'min_rating': 5, 'min_price': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Find a hotel in Tokyo that won't break the bank for the period between March 15 and 20.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'checkin_date': '2024-03-15', 'checkout_date': '2024-03-20', 'order_by': 'price', 'min_price': 0, 'adults_number': 1, 'children_number': 0, 'min_rating': 0, 'max_price': None}}"
+    },
+    {
+        "instruction": "I'm visiting Bangkok in December. Could you find me a hotel near the Grand Palace for 2 adults and 2 children? Preferably, the hotel should have a rating of at least 7/10.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Bangkok', 'checkin_date': '2024-12-01', 'checkout_date': '2024-12-05', 'adults_number': 2, 'children_number': 2, 'min_rating': 7}}"
+    },
+    {
+        "instruction": "Find me hotels near the ski slopes in Aspen for my stay during Christmas week (December 24-31), rated above 8 out of 10 with at least four stars.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Aspen', 'checkin_date': '2024-12-24', 'checkout_date': '2024-12-31', 'min_rating': 8, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Can you find a hotel in Bali with beach access and is rated above 8 out of 10, please book it for my stay from March 3 to 9; I'm looking for something luxurious.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Bali', 'checkin_date': '2024-03-03', 'checkout_date': '2024-03-09', 'adults_number': 1, 'children_number': 0, 'min_rating': 8, 'min_price': None, 'max_price': None, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Can you find a hotel in Vienna that offers airport shuttle service, suitable for three adults staying from March 5th to 9th?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Vienna', 'checkin_date': '2024-03-05', 'checkout_date': '2024-03-09', 'adults_number': 3, 'children_number': 0, 'min_rating': None, 'min_price': None, 'max_price': None, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel with a pool in Cancun from July 28th to August 1st, suitable for two adults and one child.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Cancun', 'checkin_date': '2024-07-28', 'checkout_date': '2024-08-01', 'adults_number': 2, 'children_number': 1, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Find me all the 5-star hotels in New York with a reasonable price for a couple, check-in on May 22, check-out on May 25.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'New York', 'checkin_date': '2024-05-22', 'checkout_date': '2024-05-25', 'adults_number': 2, 'min_rating': 5, 'order_by': 'price', 'max_price': 'reasonable'}}"
+    },
+    {
+        "instruction": "I'm looking for hotels with a gym and fitness center in Singapore from March 3rd to 10th, accommodating two adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Singapore', 'checkin_date': '2024-03-03', 'checkout_date': '2024-03-10', 'adults_number': 2}}"
+    },
+    {
+        "instruction": "I need a hotel with easy access to public transportation in Berlin for the period May 10 - 17; one guest.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-05-10', 'checkout_date': '2024-05-17', 'adults_number': 1, 'children_number': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I need a budget hotel in Berlin with free Wi-Fi, available from April 18th to 23rd.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-04-18', 'checkout_date': '2024-04-23', 'min_price': 0, 'order_by': 'price', 'adults_number': 1, 'children_number': 0, 'min_rating': 0, 'max_price': None}}"
+    },
+    {
+        "instruction": "I'm looking for a budget-friendly hotel in Tokyo for my stay from January 10th to 14th, with easy access to public transportation.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'checkin_date': '2024-01-10', 'checkout_date': '2024-01-14', 'adults_number': 1, 'children_number': 0, 'order_by': 'price', 'min_price': 0, 'max_price': None, 'min_rating': 0}}"
+    },
+    {
+        "instruction": "I'm looking for a romantic getaway hotel in Paris from August 20th to 27th, suitable for couples only.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Paris', 'checkin_date': '2024-08-20', 'checkout_date': '2024-08-27', 'adults_number': 2, 'children_number': 0, 'order_by': 'popularity', 'min_rating': 8, 'min_price': 100, 'max_price': 500}}"
+    },
+    {
+        "instruction": "Can you find me hotels offering shuttle service to the city center in Amsterdam for August 3 - 10, four adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Amsterdam', 'checkin_date': '2024-08-03', 'checkout_date': '2024-08-10', 'adults_number': 4, 'children_number': 0, 'order_by': 'popularity', 'min_rating': 0, 'min_price': 0, 'max_price': 0}}"
+    },
+    {
+        "instruction": "I need a family-friendly hotel in London for the period between October 2 and 7; we're two adults and two children.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'checkin_date': '2024-10-02', 'checkout_date': '2024-10-07', 'adults_number': 2, 'children_number': 2}}"
+    },
+    {
+        "instruction": "Can you find me a hotel in Amsterdam that is close to the museums, for 2 guests, from March 1 to March 5?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Amsterdam', 'checkin_date': '2024-03-01', 'checkout_date': '2024-03-05', 'adults_number': 2, 'children_number': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I need two rooms at a three-star hotel in Tokyo for the period from January 20 to 27, accommodating four adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'checkin_date': '2024-01-20', 'checkout_date': '2024-01-27', 'adults_number': 4, 'children_number': 0, 'min_rating': 3, 'min_price': None, 'max_price': None, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I want to book a hotel in Madrid for 3 adults from July 26 to July 30, within a budget of $200 per night.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Madrid', 'checkin_date': '2024-07-26', 'checkout_date': '2024-07-30', 'adults_number': 3, 'max_price': 200, 'order_by': 'price'}}"
+    },
+    {
+        "instruction": "Can you find a budget-friendly hotel in Bangkok with easy access to public transportation?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Bangkok', 'order_by': 'price', 'min_price': 0, 'max_price': 100, 'adults_number': 1, 'children_number': 0, 'min_rating': 0, 'checkin_date': None, 'checkout_date': None}}"
+    },
+    {
+        "instruction": "I need a hotel in Athens for a family of four",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Athens', 'adults_number': 2, 'children_number': 2}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel in Mexico City that has a restaurant for 3 guests from October 12th to 17th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Mexico City', 'checkin_date': '2024-10-12', 'checkout_date': '2024-10-17', 'adults_number': 3, 'children_number': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel in Tokyo near the airport for a one-night stay on July 10.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'checkin_date': '2024-07-10', 'checkout_date': '2024-07-11', 'adults_number': 1, 'children_number': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I need a hotel with a gym in Lisbon during my business trip from August 1st to 6th, accommodating one adult.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Lisbon', 'checkin_date': '2024-08-01', 'checkout_date': '2024-08-06', 'adults_number': 1, 'min_rating': 7, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I'm looking for a budget hotel in Tokyo that's close to public transportation; can you help?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'order_by': 'price', 'max_price': 100, 'min_price': 0, 'checkin_date': None, 'checkout_date': None, 'adults_number': None, 'children_number': None, 'min_rating': None}}"
+    },
+    {
+        "instruction": "Can you find me hotels near the Colosseum in Rome that are pet-friendly for our family of three staying from December 5 to 10; we have one small dog.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome, Italy', 'checkin_date': '2024-12-05', 'checkout_date': '2024-12-10', 'adults_number': 3, 'children_number': 0, 'min_rating': 7, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Book a hotel in Istanbul for 3 guests, from February 20 to February 25, with a price range of $150 to $200 per night.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Istanbul', 'checkin_date': '2024-02-20', 'checkout_date': '2024-02-25', 'adults_number': 3, 'children_number': 0, 'min_rating': 0, 'min_price': 150, 'max_price': 200, 'order_by': 'price'}}"
+    },
+    {
+        "instruction": "Find a hotel in Istanbul with a 5-star rating, check-in on April 1, check-out on April 5, for 2 guests.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Istanbul', 'checkin_date': '2024-04-01', 'checkout_date': '2024-04-05', 'adults_number': 2, 'min_rating': 5}}"
+    },
+    {
+        "instruction": "Can you recommend hotels in Berlin with spa facilities, please include check-in date as July 5th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-07-05', 'checkout_date': None, 'adults_number': None, 'children_number': None, 'order_by': 'popularity', 'min_rating': None, 'min_price': None, 'max_price': None}}"
+    },
+    {
+        "instruction": "Can you assist me in finding a hotel in Tokyo for 2 adults and a child from October 5 to October 10?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'checkin_date': '2024-10-05', 'checkout_date': '2024-10-10', 'adults_number': 2, 'children_number': 1}}"
+    },
+    {
+        "instruction": "Can you find me a hotel in New York for the weekend of September 10th to 12th, with a price under $200 per night?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'New York', 'checkin_date': '2024-09-10', 'checkout_date': '2024-09-12', 'adults_number': 2, 'max_price': 200, 'order_by': 'price'}}"
+    },
+    {
+        "instruction": "Find me hotels in Bangkok with good reviews and located near shopping areas for my trip from August 10 to 14; we're traveling as a couple.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Bangkok', 'checkin_date': '2024-08-10', 'checkout_date': '2024-08-14', 'adults_number': 2, 'min_rating': 7, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Can you find hotels in Cape Town that offer family packages including activities for kids?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Cape Town', 'adults_number': 2, 'children_number': 2, 'min_rating': 7, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I need a hotel with spa facilities in Bali for the period between May 5 and 12; it should have at least five stars, suitable for two adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Bali', 'checkin_date': '2024-05-05', 'checkout_date': '2024-05-12', 'adults_number': 2, 'min_rating': 5, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I'm planning a trip to Sydney in April, could you find me a hotel with a view of the harbour for a single guest from the 12th to the 16th?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Sydney', 'checkin_date': '2024-04-12', 'checkout_date': '2024-04-16', 'adults_number': 1, 'children_number': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Find me the best-rated hotel in New York for a single guest, staying from January 5th to 10th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'New York', 'checkin_date': '2024-01-05', 'checkout_date': '2024-01-10', 'adults_number': 1, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I need a hotel in Rome that's rated at least 8 out of 10 and has free Wi-Fi.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome', 'min_rating': 8}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel with a spa and wellness facilities in Berlin for my solo trip from December 10 to 15.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-12-10', 'checkout_date': '2024-12-15', 'adults_number': 1, 'children_number': 0, 'min_rating': 7, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Can you book me a hotel with a pool and good reviews in Cancun for my stay from January 27 to February 4?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Cancun', 'checkin_date': '2024-01-27', 'checkout_date': '2024-02-04', 'min_rating': 8, 'order_by': 'rating', 'adults_number': 1}}"
+    },
+    {
+        "instruction": "I'm planning to visit Madrid in May. Can you recommend a hotel near the airport for 2 adults and 2 children? A hotel with a rating of at least 7/10 would be perfect.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Madrid', 'checkin_date': '2024-05-01', 'checkout_date': '2024-05-02', 'adults_number': 2, 'children_number': 2, 'min_rating': 7}}"
+    },
+    {
+        "instruction": "I want a hotel in New York City with at least three stars and free Wi-Fi, please book it for my stay from January 24 to 30.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'New York City', 'checkin_date': '2024-01-24', 'checkout_date': '2024-01-30', 'min_rating': 3}}"
+    },
+    {
+        "instruction": "I'm searching for affordable accommodations in Bali for a month-long stay, from January 5 to February 5.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Bali', 'checkin_date': '2024-01-05', 'checkout_date': '2024-02-05', 'adults_number': 2, 'order_by': 'price', 'min_price': None, 'max_price': None}}"
+    },
+    {
+        "instruction": "Book a hotel in Bangkok for a solo traveler, from March 20 to March 25.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Bangkok', 'checkin_date': '2024-03-20', 'checkout_date': '2024-03-25', 'adults_number': 1, 'children_number': 0, 'min_rating': 0, 'min_price': 0, 'max_price': None, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Can you book me a hotel with high ratings in Madrid during my trip from June 20 to 26; we're traveling as three guests.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Madrid', 'checkin_date': '2024-06-20', 'checkout_date': '2024-06-26', 'adults_number': 3, 'order_by': 'rating', 'min_rating': 8}}"
+    },
+    {
+        "instruction": "Find me hotels in Madrid near the Prado Museum that are rated at least 7 out of 10 and can accommodate three guests from August 24 to 28.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Madrid', 'checkin_date': '2024-08-24', 'checkout_date': '2024-08-28', 'adults_number': 3, 'children_number': 0, 'min_rating': 7}}"
+    },
+    {
+        "instruction": "Find me hotels in Vienna with at least three stars and a swimming pool.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Vienna', 'min_rating': 3, 'order_by': 'popularity', 'min_price': 0, 'max_price': None, 'adults_number': None, 'children_number': None}}"
+    },
+    {
+        "instruction": "I need a family-friendly hotel in London for the period between October 2 and 7, accommodating two adults and one child.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'checkin_date': '2024-10-02', 'checkout_date': '2024-10-07', 'adults_number': 2, 'children_number': 1, 'order_by': 'popularity', 'min_rating': 4}}"
+    },
+    {
+        "instruction": "Book me a luxury hotel in New York City, preferably with a view of Central Park, for the week starting on November 13th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'New York City', 'checkin_date': '2024-11-13', 'checkout_date': '2024-11-20', 'adults_number': 1, 'children_number': 0, 'min_rating': 8, 'min_price': None, 'max_price': None, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I am looking for a five-star hotel in London for 2 adults and 1 child, check-in on April 1 and check-out on April 5.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'checkin_date': '2024-04-01', 'checkout_date': '2024-04-05', 'adults_number': 2, 'children_number': 1, 'min_rating': 5}}"
+    },
+    {
+        "instruction": "I need a hotel in Bangkok for two adults, staying from June 10th to 15th, looking for a place with a spa.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Bangkok', 'checkin_date': '2024-06-10', 'checkout_date': '2024-06-15', 'adults_number': 2, 'min_rating': 4, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Book me a hotel with good reviews in Singapore that is close to the airport for my trip from December 5 to 10; we're traveling as a family of three.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Singapore', 'checkin_date': '2024-12-05', 'checkout_date': '2024-12-10', 'adults_number': 3, 'children_number': 0, 'order_by': 'rating', 'min_rating': 8}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel in Athens with a rating of at least 9.0 for two guests from April 10 to April 15.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Athens', 'checkin_date': '2024-04-10', 'checkout_date': '2024-04-15', 'adults_number': 2, 'min_rating': 9.0, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Find me hotels near the Eiffel Tower in Paris for my stay from September 25 to October 1; I'm traveling solo.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Paris', 'checkin_date': '2024-09-25', 'checkout_date': '2024-10-01', 'adults_number': 1, 'children_number': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I need a hotel in Berlin for 2 adults and 3 children. We will arrive on September 7 and leave on September 12. Preferably, the hotel should have a rating of at least 7/10.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-09-07', 'checkout_date': '2024-09-12', 'adults_number': 2, 'children_number': 3, 'min_rating': 7}}"
+    },
+    {
+        "instruction": "Can you find a hotel with a rating above 8 out of 10 in Barcelona for my stay from September 5 to 10?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Barcelona', 'checkin_date': '2024-09-05', 'checkout_date': '2024-09-10', 'adults_number': 2, 'min_rating': 8}}"
+    },
+    {
+        "instruction": "I want a hotel in Singapore with a view of the city for 2 guests from December 1st to 5th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Singapore', 'checkin_date': '2024-12-01', 'checkout_date': '2024-12-05', 'adults_number': 2, 'children_number': 0, 'order_by': 'popularity', 'min_rating': None, 'min_price': None, 'max_price': None}}"
+    },
+    {
+        "instruction": "I need a family-friendly hotel in London for the period between October 2 and 7; we're two adults and two children.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'checkin_date': '2024-10-02', 'checkout_date': '2024-10-07', 'adults_number': 2, 'children_number': 2}}"
+    },
+    {
+        "instruction": "Can you find a hotel in Athens with a 10 rating for 2 guests from October 20 to October 25?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Athens', 'checkin_date': '2024-10-20', 'checkout_date': '2024-10-25', 'adults_number': 2, 'min_rating': 10}}"
+    },
+    {
+        "instruction": "Find hotels with free Wi-Fi and breakfast included in Rome for my stay from April 15 to 22, two adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome', 'checkin_date': '2024-04-15', 'checkout_date': '2024-04-22', 'adults_number': 2, 'children_number': 0, 'min_rating': 7, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Book me a luxury hotel in Dubai with at least five stars, please include breakfast service for the week of November 13-19.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Dubai', 'checkin_date': '2024-11-13', 'checkout_date': '2024-11-19', 'adults_number': 1, 'children_number': 0, 'min_rating': 5, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel in Amsterdam from April 10 to April 15, I'm traveling alone and want a rating of 9 or above.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Amsterdam', 'checkin_date': '2024-04-10', 'checkout_date': '2024-04-15', 'adults_number': 1, 'min_rating': 9}}"
+    },
+    {
+        "instruction": "Book a hotel in San Francisco for a business trip, check-in on February 10, check-out on February 13.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'San Francisco', 'checkin_date': '2024-02-10', 'checkout_date': '2024-02-13', 'adults_number': 1, 'children_number': 0, 'min_rating': 0, 'min_price': 0, 'max_price': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Book me a luxury hotel in Dubai for the week starting on November 3rd, with at least five stars.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Dubai', 'checkin_date': '2024-11-03', 'checkout_date': '2024-11-10', 'adults_number': 1, 'children_number': 0, 'min_rating': 5, 'min_price': None, 'max_price': None, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I need a hotel in Barcelona with a rating of 9 or higher from August 1 to 5, for two adults and one child.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Barcelona', 'checkin_date': '2024-08-01', 'checkout_date': '2024-08-05', 'adults_number': 2, 'children_number': 1, 'min_rating': 9}}"
+    },
+    {
+        "instruction": "I want to stay in a budget-friendly hotel in Tokyo during the first week of March; please include breakfast in the price.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'checkin_date': '2024-03-01', 'checkout_date': '2024-03-07', 'adults_number': 2, 'order_by': 'price'}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel in Amsterdam with a high rating (9 out of 10) for the period between June 20 to 25.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Amsterdam', 'checkin_date': '2024-06-20', 'checkout_date': '2024-06-25', 'min_rating': 9, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Find me hotels with free breakfast and Wi-Fi in Berlin for the period between April 15 to 22; I'm traveling alone.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-04-15', 'checkout_date': '2024-04-22', 'adults_number': 1, 'children_number': 0, 'min_rating': 7, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Could you please find a hotel in Vienna for 2 adults and 2 children, from January 10 to 17, with a rating not less than 8?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Vienna', 'checkin_date': '2024-01-10', 'checkout_date': '2024-01-17', 'adults_number': 2, 'children_number': 2, 'min_rating': 8}}"
+    },
+    {
+        "instruction": "I need a hotel in Singapore for 2 adults and 1 child, from September 1 to September 6, with a pool and a gym.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Singapore', 'checkin_date': '2024-09-01', 'checkout_date': '2024-09-06', 'adults_number': 2, 'children_number': 1, 'min_rating': 8, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Book a hotel in Vienna that's within walking distance of the city center for our stay from November 18 to 24.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Vienna', 'checkin_date': '2024-11-18', 'checkout_date': '2024-11-24', 'adults_number': 2, 'children_number': 0, 'min_rating': 0, 'min_price': 0, 'max_price': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Find hotels near the beach in Miami for my vacation from December 30 to January 2, suitable for couples.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Miami', 'checkin_date': '2024-12-30', 'checkout_date': '2025-01-02', 'adults_number': 2, 'children_number': 0, 'order_by': 'popularity', 'min_rating': 7}}"
+    },
+    {
+        "instruction": "Book a hotel in Berlin, preferably near the Brandenburg Gate, for a single guest, check-in on March 10, check-out on March 14.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-03-10', 'checkout_date': '2024-03-14', 'adults_number': 1, 'children_number': 0, 'order_by': 'popularity', 'min_rating': 7, 'min_price': 0, 'max_price': 200}}"
+    },
+    {
+        "instruction": "Can you find a hotel with good reviews near Barcelona for my family vacation next week?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Barcelona', 'checkin_date': '2024-06-25', 'checkout_date': '2024-07-02', 'adults_number': 4, 'children_number': 0, 'min_rating': 8, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "Look for a budget-friendly hotel in Rio de Janeiro for me and my partner, from October 15 to October 22.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rio de Janeiro', 'checkin_date': '2024-10-15', 'checkout_date': '2024-10-22', 'adults_number': 2, 'order_by': 'price', 'min_price': 0, 'max_price': 100}}"
+    },
+    {
+        "instruction": "I'm looking for a budget-friendly hotel in Berlin for a single guest, from September 1st to 5th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-09-01', 'checkout_date': '2024-09-05', 'adults_number': 1, 'order_by': 'price', 'min_rating': 0, 'min_price': 0, 'max_price': 100}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel in Buenos Aires for 2 guests, from October 10 to October 15. I need it to be affordable.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Buenos Aires', 'checkin_date': '2024-10-10', 'checkout_date': '2024-10-15', 'adults_number': 2, 'children_number': 0, 'min_rating': 0, 'min_price': 0, 'max_price': None, 'order_by': 'price'}}"
+    },
+    {
+        "instruction": "I need hotels in Lisbon that offer free parking and are located near the historic center for our stay from November 18 to 23, accommodating two adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Lisbon', 'checkin_date': '2024-11-18', 'checkout_date': '2024-11-23', 'adults_number': 2, 'min_rating': 7, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Can you find me affordable hotels near the airport in Singapore for my arrival on May 5th?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Singapore', 'checkin_date': '2024-05-05', 'checkout_date': '2024-05-06', 'adults_number': 1, 'children_number': 0, 'order_by': 'price', 'min_rating': 0, 'min_price': 0, 'max_price': 1000}}"
+    },
+    {
+        "instruction": "I need a family-friendly hotel in London for the period between October 2 and 7, accommodating two adults and one child.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'London', 'checkin_date': '2024-10-02', 'checkout_date': '2024-10-07', 'adults_number': 2, 'children_number': 1, 'order_by': 'rating', 'min_rating': 8}}"
+    },
+    {
+        "instruction": "I want to stay at a hotel with more than 9 stars in New York City from January 30 to February 2; it should be suitable for two adults and one child.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'New York City', 'checkin_date': '2024-01-30', 'checkout_date': '2024-02-02', 'adults_number': 2, 'children_number': 1, 'min_rating': 9}}"
+    },
+    {
+        "instruction": "I'm looking for a hotel in Vienna from October 1 to October 5, I'm traveling alone and want a rating of 8 or above.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Vienna', 'checkin_date': '2024-10-01', 'checkout_date': '2024-10-05', 'adults_number': 1, 'min_rating': 8}}"
+    },
+    {
+        "instruction": "I'd like to book a hotel in Chicago for 2 adults and 1 child from August 10th to 15th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Chicago', 'checkin_date': '2024-08-10', 'checkout_date': '2024-08-15', 'adults_number': 2, 'children_number': 1}}"
+    },
+    {
+        "instruction": "I need a hotel in Tokyo, near the Shibuya crossing, for a solo traveler, check-in on December 5, check-out on December 10.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'checkin_date': '2024-12-05', 'checkout_date': '2024-12-10', 'adults_number': 1, 'children_number': 0, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I need a hotel with an indoor pool in Boston for my weekend getaway on September 16 and 17, suitable for two adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Boston', 'checkin_date': '2024-09-16', 'checkout_date': '2024-09-17', 'adults_number': 2, 'min_rating': 4}}"
+    },
+    {
+        "instruction": "Find me hotels with free Wi-Fi in Tokyo during my stay from December 15 to 20, preferably near public transportation.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Tokyo', 'checkin_date': '2024-12-15', 'checkout_date': '2024-12-20', 'order_by': 'popularity', 'min_rating': 4}}"
+    },
+    {
+        "instruction": "Book me a hotel with a pool in Cancun, Mexico for the period between October 18th to 25th; I'm traveling with my family (two adults and two children).",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Cancun, Mexico', 'checkin_date': '2024-10-18', 'checkout_date': '2024-10-25', 'adults_number': 2, 'children_number': 2, 'min_rating': 0, 'min_price': 0, 'max_price': None, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I want a hotel in Sydney with a rating of 9 or higher for 3 guests from February 1 to February 7.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Sydney', 'checkin_date': '2024-02-01', 'checkout_date': '2024-02-07', 'adults_number': 3, 'children_number': 0, 'min_rating': 9, 'min_price': None, 'max_price': None, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "I need a hotel with at least three stars and free Wi-Fi in Berlin for my stay from March 25 to 30, accommodating two adults.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-03-25', 'checkout_date': '2024-03-30', 'adults_number': 2, 'min_rating': 3, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I want a hotel in Rome with a view of the Colosseum, for two people from June 20th to 27th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Rome', 'checkin_date': '2024-06-20', 'checkout_date': '2024-06-27', 'adults_number': 2, 'order_by': 'popularity'}}"
+    },
+    {
+        "instruction": "Book me a luxury hotel in Dubai with at least five stars for the week starting on November 14th.",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Dubai', 'checkin_date': '2024-11-14', 'checkout_date': '2024-11-21', 'adults_number': 1, 'min_rating': 5, 'order_by': 'rating'}}"
+    },
+    {
+        "instruction": "I'm traveling to Berlin from February 1 to February 5. Can you recommend a hotel with a good location and a rating of at least 7?",
+        "input": "",
+        "output": "{'name': 'search_hotels_tool', 'arguments': {'location': 'Berlin', 'checkin_date': '2024-02-01', 'checkout_date': '2024-02-05', 'min_rating': 7, 'order_by': 'popularity'}}"
+    }
+]

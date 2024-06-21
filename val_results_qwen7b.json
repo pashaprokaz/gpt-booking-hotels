@@ -1,0 +1,1383 @@
+[
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Seoul",
+            "checkin_date": "2023-05-01",
+            "checkout_date": "2023-05-06",
+            "adults_number": 2,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Vienna",
+            "checkin_date": "2024-05-05",
+            "checkout_date": "2024-05-09",
+            "adults_number": 2,
+            "order_by": "popularity",
+            "min_rating": 0,
+            "max_price": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Toronto",
+            "checkin_date": "2024-09-30",
+            "checkout_date": "2024-10-05",
+            "adults_number": 4,
+            "children_number": 4,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Cancun",
+            "checkin_date": "2004-01-05",
+            "checkout_date": "2004-01-12",
+            "adults_number": 2,
+            "min_rating": 4,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "New Orleans",
+            "checkin_date": "2023-01-01",
+            "checkout_date": "2023-01-05",
+            "min_rating": 8,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rome",
+            "checkin_date": null,
+            "checkout_date": null,
+            "adults_number": null,
+            "children_number": null,
+            "order_by": "rating",
+            "min_rating": 4,
+            "min_price": null,
+            "max_price": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Vienna",
+            "checkin_date": "2024-02-15",
+            "checkout_date": "2024-02-20",
+            "adults_number": 2,
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rome",
+            "checkin_date": "2024-04-01",
+            "checkout_date": "2024-04-05",
+            "adults_number": 1,
+            "order_by": "popularity",
+            "min_rating": null,
+            "min_price": null,
+            "max_price": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "order_by": "popularity",
+            "min_rating": 0,
+            "min_price": null,
+            "max_price": null,
+            "adults_number": null,
+            "children_number": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2012-01-10",
+            "checkout_date": "2012-01-15",
+            "order_by": "popularity",
+            "min_rating": 0,
+            "min_price": null,
+            "max_price": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Dubai",
+            "checkin_date": "2023-11-01",
+            "checkout_date": "2023-11-06",
+            "adults_number": 2,
+            "min_rating": 9,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Istanbul",
+            "checkin_date": "2023-11-01",
+            "checkout_date": "2023-11-05",
+            "adults_number": 2,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Vienna",
+            "checkin_date": "2023-02-01",
+            "checkout_date": "2023-02-07",
+            "adults_number": 2,
+            "min_rating": 9
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Barcelona",
+            "checkin_date": "2023-09-15",
+            "checkout_date": "2023-09-18",
+            "min_rating": 8.0,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "San Francisco",
+            "checkin_date": "2024-07-01",
+            "checkout_date": "2024-07-05",
+            "adults_number": 1,
+            "min_price": 300
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Dubai",
+            "checkin_date": "2024-11-25",
+            "checkout_date": "2024-12-01",
+            "adults_number": 1,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rome",
+            "checkin_date": "2024-07-10",
+            "checkout_date": "2024-07-15",
+            "adults_number": 2,
+            "children_number": 2,
+            "min_price": 200,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Istanbul",
+            "checkin_date": "2023-05-22",
+            "checkout_date": "2023-05-29",
+            "adults_number": 1,
+            "min_rating": 7
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2023-10-01",
+            "checkout_date": "2023-10-03",
+            "adults_number": 2,
+            "min_price": 50,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Bangkok",
+            "checkin_date": "2023-06-01",
+            "checkout_date": "2023-06-04",
+            "adults_number": 3,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-04-15",
+            "checkout_date": "2024-04-17",
+            "adults_number": 1
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Lisbon",
+            "checkin_date": "2024-06-18",
+            "checkout_date": "2024-06-19",
+            "adults_number": 1,
+            "order_by": "proximity_to_center"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-01-03",
+            "checkout_date": "2024-01-07",
+            "adults_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Phuket",
+            "checkin_date": "2024-01-03",
+            "checkout_date": "2024-01-10",
+            "adults_number": 2,
+            "min_rating": 4,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rome",
+            "checkin_date": "2023-10-01",
+            "checkout_date": "2023-10-05",
+            "adults_number": 2,
+            "min_rating": 8,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rome",
+            "checkin_date": "2024-09-05",
+            "checkout_date": "2024-09-10",
+            "adults_number": 2,
+            "min_rating": 8.5
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Istanbul",
+            "checkin_date": "2023-09-02",
+            "checkout_date": "2023-09-25",
+            "adults_number": 3,
+            "min_rating": 3,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Cape Town",
+            "checkin_date": "2024-06-28",
+            "checkout_date": "2024-07-05",
+            "adults_number": 2,
+            "children_number": 1,
+            "min_rating": 5,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Vienna",
+            "checkin_date": "2012-12-23",
+            "checkout_date": "2012-12-28",
+            "adults_number": 2,
+            "children_number": 2,
+            "order_by": "popularity"
+        }
+    },
+    null,
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Amsterdam",
+            "checkin_date": "2023-09-10",
+            "checkout_date": "2023-09-15",
+            "adults_number": 1,
+            "min_rating": 8,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Dubai",
+            "checkin_date": "2023-07-10",
+            "checkout_date": "2023-07-17",
+            "adults_number": 2,
+            "order_by": "rating",
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": "2023-10-02",
+            "checkout_date": "2023-10-07",
+            "adults_number": 2,
+            "children_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": "2023-01-01",
+            "checkout_date": "2023-01-10",
+            "adults_number": 2,
+            "children_number": 3,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": null,
+            "checkout_date": null,
+            "adults_number": null,
+            "children_number": null,
+            "order_by": "rating",
+            "min_rating": 5,
+            "min_price": null,
+            "max_price": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-03-03",
+            "checkout_date": "2024-03-06",
+            "adults_number": 2,
+            "min_rating": 0,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rome",
+            "checkin_date": "2024-06-10",
+            "checkout_date": "2024-06-17",
+            "adults_number": 2,
+            "min_rating": 4,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-03-25",
+            "checkout_date": "2024-03-30",
+            "adults_number": 3
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Buenos Aires",
+            "checkin_date": null,
+            "checkout_date": null,
+            "adults_number": 2,
+            "children_number": 2,
+            "min_rating": 9,
+            "min_price": null,
+            "max_price": null,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": "2023-10-02",
+            "checkout_date": "2023-10-07",
+            "adults_number": 2,
+            "children_number": 2,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": "2023-02-03",
+            "checkout_date": "2023-02-07",
+            "order_by": "rating",
+            "min_rating": 8,
+            "include_extra_features": [
+                "free_wifi",
+                "parking"
+            ]
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Tokyo",
+            "checkin_date": "2023-03-15",
+            "checkout_date": "2023-03-20",
+            "adults_number": 2,
+            "min_price": 50,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Bangkok",
+            "checkin_date": "2024-12-01",
+            "checkout_date": "2023-12-05",
+            "adults_number": 2,
+            "children_number": 2,
+            "min_rating": 7,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Aspen",
+            "checkin_date": "2023-12-24",
+            "checkout_date": "2023-12-31",
+            "adults_number": 2,
+            "min_rating": 8,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Bali",
+            "checkin_date": "2024-03-03",
+            "checkout_date": "2024-03-09",
+            "adults_number": 1,
+            "min_rating": 8,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Vienna",
+            "checkin_date": "2023-03-05",
+            "checkout_date": "2023-03-09",
+            "adults_number": 3,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Cancun",
+            "checkin_date": "2004-07-28",
+            "checkout_date": "2004-07-01",
+            "adults_number": 2,
+            "children_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "New York",
+            "checkin_date": "2023-05-22",
+            "checkout_date": "2023-05-25",
+            "adults_number": 2,
+            "min_rating": 5,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Singapore",
+            "checkin_date": "2023-03-03",
+            "checkout_date": "2023-03-10",
+            "adults_number": 2,
+            "order_by": "popularity",
+            "min_rating": 7,
+            "min_price": 100,
+            "max_price": 500,
+            "amenities": [
+                "gym",
+                "fitness_center"
+            ]
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-05-10",
+            "checkout_date": "2024-05-17",
+            "adults_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-04-18",
+            "checkout_date": "2024-04-23",
+            "adults_number": 2,
+            "min_price": 50,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Tokyo",
+            "checkin_date": "2024-01-10",
+            "checkout_date": "2024-01-14",
+            "adults_number": 2,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Paris",
+            "checkin_date": "2024-08-20",
+            "checkout_date": "2024-08-27",
+            "adults_number": 2,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Amsterdam",
+            "checkin_date": "2023-08-03",
+            "checkout_date": "2023-08-10",
+            "adults_number": 4,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": "2023-10-02",
+            "checkout_date": "2023-10-07",
+            "adults_number": 2,
+            "children_number": 2
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Amsterdam",
+            "checkin_date": "2023-03-01",
+            "checkout_date": "2023-03-05",
+            "adults_number": 2,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Tokyo",
+            "checkin_date": "2023-01-00",
+            "checkout_date": "2023-01-27",
+            "adults_number": 4,
+            "min_rating": 3,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Madrid",
+            "checkin_date": "2024-07-26",
+            "checkout_date": "2024-07-30",
+            "adults_number": 3,
+            "min_price": 200,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Bangkok",
+            "checkin_date": null,
+            "checkout_date": null,
+            "adults_number": null,
+            "children_number": null,
+            "order_by": "price",
+            "min_price": 50,
+            "max_price": 1000
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Athens",
+            "checkin_date": null,
+            "checkout_date": null,
+            "adults_number": 4,
+            "children_number": 4,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Mexico City",
+            "checkin_date": "2023-10-12",
+            "checkout_date": "2023-10-17",
+            "adults_number": 3,
+            "order_by": "popularity"
+        }
+    },
+    null,
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Lisbon",
+            "checkin_date": "2023-08-01",
+            "checkout_date": "2023-08-06",
+            "adults_number": 1,
+            "min_rating": 5,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Tokyo",
+            "order_by": "price",
+            "min_price": 50,
+            "max_price": 100,
+            "checkin_date": null,
+            "checkout_date": null,
+            "adults_number": null,
+            "children_number": null,
+            "min_rating": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rome",
+            "checkin_date": "2023-12-05",
+            "checkout_date": "2023-12-10",
+            "adults_number": 2,
+            "children_number": 1,
+            "order_by": "popularity",
+            "min_rating": 4,
+            "pets_allowed": true
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Istanbul",
+            "checkin_date": "2024-02-00",
+            "checkout_date": "2024-02-25",
+            "adults_number": 3,
+            "min_price": 150,
+            "max_price": 200
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Istanbul",
+            "checkin_date": "2024-04-01",
+            "checkout_date": "2024-04-05",
+            "adults_number": 2,
+            "min_rating": 5
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-07-05",
+            "order_by": "popularity",
+            "min_rating": 4,
+            "amenities": "spa"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Tokyo",
+            "checkin_date": "2023-10-05",
+            "checkout_date": "2023-10-10",
+            "adults_number": 2,
+            "children_number": 1
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "New York",
+            "checkin_date": "2023-09-10",
+            "checkout_date": "2023-09-12",
+            "adults_number": 2,
+            "min_price": 200,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Bangkok",
+            "checkin_date": "2024-08-10",
+            "checkout_date": "2024-08-14",
+            "adults_number": 2,
+            "order_by": "rating",
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Cape Town",
+            "order_by": "popularity",
+            "min_rating": 4,
+            "children_number": 2
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Bali",
+            "checkin_date": "2023-05-05",
+            "checkout_date": "2023-05-12",
+            "adults_number": 2,
+            "min_rating": 5,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Sydney",
+            "checkin_date": "2024-04-12",
+            "checkout_date": "2024-04-16",
+            "adults_number": 1,
+            "order_by": "rating",
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "New York",
+            "checkin_date": "2023-01-05",
+            "checkout_date": "2023-01-10",
+            "adults_number": 1,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rome",
+            "min_rating": 8,
+            "order_by": "rating",
+            "min_price": null,
+            "max_price": null,
+            "adults_number": null,
+            "children_number": null,
+            "checkin_date": null,
+            "checkout_date": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2012-10",
+            "checkout_date": "2012-15",
+            "adults_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Cancun",
+            "checkin_date": "2023-01-27",
+            "checkout_date": "2023-02-04",
+            "adults_number": 2,
+            "order_by": "rating",
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Madrid",
+            "checkin_date": "2023-05-01",
+            "checkout_date": "2023-05-05",
+            "adults_number": 2,
+            "children_number": 2,
+            "min_rating": 7,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "New York City",
+            "checkin_date": "2023-01-24",
+            "checkout_date": "2023-01-30",
+            "min_rating": 3,
+            "order_by": "rating",
+            "include_free_wifi": true
+        }
+    },
+    null,
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Bangkok",
+            "checkin_date": "2023-03-02",
+            "checkout_date": "2023-03-05",
+            "adults_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Madrid",
+            "checkin_date": "2024-06-20",
+            "checkout_date": "2024-06-26",
+            "adults_number": 3,
+            "order_by": "rating",
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Madrid",
+            "checkin_date": "2023-08-24",
+            "checkout_date": "2023-08-28",
+            "adults_number": 3,
+            "min_rating": 7
+        }
+    },
+    null,
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": "2023-10-02",
+            "checkout_date": "2023-10-07",
+            "adults_number": 2,
+            "children_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "New York City",
+            "checkin_date": "2023-11-13",
+            "checkout_date": "2023-11-20",
+            "adults_number": 2,
+            "min_rating": 8,
+            "order_by": "rating",
+            "max_price": 500
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": "2023-0-01",
+            "checkout_date": "2023-0-05",
+            "adults_number": 2,
+            "children_number": 1,
+            "min_rating": 5,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Bangkok",
+            "checkin_date": "2024-06-10",
+            "checkout_date": "2024-06-15",
+            "adults_number": 2,
+            "order_by": "popularity",
+            "min_rating": 0,
+            "max_price": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Singapore",
+            "checkin_date": "2024-12-05",
+            "checkout_date": "2024-12-10",
+            "adults_number": 2,
+            "children_number": 1,
+            "order_by": "rating",
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Athens",
+            "checkin_date": "2024-04-10",
+            "checkout_date": "2024-04-15",
+            "adults_number": 2,
+            "min_rating": 9.0
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Paris",
+            "checkin_date": "2023-09-25",
+            "checkout_date": "2023-10-01",
+            "adults_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-09-07",
+            "checkout_date": "2024-09-12",
+            "adults_number": 2,
+            "children_number": 3,
+            "min_rating": 7
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Barcelona",
+            "checkin_date": "2023-09-05",
+            "checkout_date": "2023-09-10",
+            "adults_number": 2,
+            "min_rating": 8,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Singapore",
+            "checkin_date": "2023-12-01",
+            "checkout_date": "2023-12-05",
+            "adults_number": 2,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": "2019-10-02",
+            "checkout_date": "2019-10-07",
+            "adults_number": 2,
+            "children_number": 2,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Athens",
+            "checkin_date": "2023-10-20",
+            "checkout_date": "2023-10-25",
+            "adults_number": 2,
+            "min_rating": 10,
+            "order_by": "rating"
+        }
+    },
+    null,
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Dubai",
+            "checkin_date": "2023-11-13",
+            "checkout_date": "2023-11-19",
+            "adults_number": 2,
+            "min_rating": 5,
+            "order_by": "rating",
+            "include_breakfast_service": true
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Amsterdam",
+            "checkin_date": "2024-04-10",
+            "checkout_date": "2024-04-15",
+            "adults_number": 1,
+            "min_rating": 9
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "San Francisco",
+            "checkin_date": "2024-02-10",
+            "checkout_date": "2024-02-13"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Dubai",
+            "checkin_date": "2024-11-03",
+            "checkout_date": "2024-11-10",
+            "adults_number": 2,
+            "min_rating": 5,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Barcelona",
+            "checkin_date": "2023-08-01",
+            "checkout_date": "2023-08-05",
+            "adults_number": 2,
+            "children_number": 1,
+            "min_rating": 9,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Tokyo",
+            "checkin_date": "2023-03-01",
+            "checkout_date": "2023-03-08",
+            "adults_number": 2,
+            "min_price": 5000,
+            "order_by": "price",
+            "include_breakfast": true
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Amsterdam",
+            "checkin_date": "2024-06-00",
+            "checkout_date": "2024-06-25",
+            "min_rating": 9
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-04-15",
+            "checkout_date": "2024-04-22",
+            "adults_number": 1,
+            "order_by": "popularity",
+            "min_rating": null,
+            "min_price": null,
+            "max_price": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Vienna",
+            "checkin_date": "2023-01-10",
+            "checkout_date": "2023-01-17",
+            "adults_number": 2,
+            "children_number": 2,
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Singapore",
+            "checkin_date": "2023-09-01",
+            "checkout_date": "2023-09-06",
+            "adults_number": 2,
+            "children_number": 1,
+            "order_by": "popularity",
+            "min_rating": null,
+            "min_price": null,
+            "max_price": null
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Vienna",
+            "checkin_date": "2012-11-18",
+            "checkout_date": "2012-11-24",
+            "adults_number": 2,
+            "order_by": "proximity_to_city_center"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Miami",
+            "checkin_date": "2012-12-30",
+            "checkout_date": "2012-01-02",
+            "adults_number": 2,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-03-10",
+            "checkout_date": "2024-03-14",
+            "adults_number": 1,
+            "order_by": "proximity_to_landmark",
+            "landmark": "Brandenburg Gate"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Barcelona",
+            "checkin_date": "2024-06-25",
+            "checkout_date": "2024-06-30",
+            "adults_number": 4,
+            "order_by": "rating",
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rio de Janeiro",
+            "checkin_date": "2023-10-15",
+            "checkout_date": "2023-10-22",
+            "adults_number": 2,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2023-09-01",
+            "checkout_date": "2023-09-05",
+            "adults_number": 1,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Buenos Aires",
+            "checkin_date": "2012-10-10",
+            "checkout_date": "2012-10-15",
+            "adults_number": 2,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Lisbon",
+            "checkin_date": "2019-11-18",
+            "checkout_date": "2019-11-23",
+            "adults_number": 2,
+            "order_by": "proximity_to_landmarks",
+            "min_rating": 7,
+            "min_price": 100,
+            "max_price": 300,
+            "landmark": "historic_center"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Singapore",
+            "checkin_date": "2023-05-05",
+            "checkout_date": "2023-05-06",
+            "adults_number": 2,
+            "order_by": "price"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "London",
+            "checkin_date": "2023-10-002",
+            "checkout_date": "2023-10-007",
+            "adults_number": 2,
+            "children_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "New York City",
+            "checkin_date": "2024-01-30",
+            "checkout_date": "2024-02-02",
+            "adults_number": 2,
+            "children_number": 1,
+            "min_rating": 10,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Vienna",
+            "checkin_date": "2023-10-01",
+            "checkout_date": "2023-10-05",
+            "adults_number": 1,
+            "min_rating": 8
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Chicago",
+            "checkin_date": "2023-08-10",
+            "checkout_date": "2023-08-15",
+            "adults_number": 2,
+            "children_number": 1
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Tokyo",
+            "checkin_date": "2023-12-05",
+            "checkout_date": "2023-12-10",
+            "adults_number": 1,
+            "order_by": "popularity"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Boston",
+            "checkin_date": "2023-09-16",
+            "checkout_date": "2023-09-17",
+            "adults_number": 2,
+            "order_by": "rating",
+            "min_rating": 7
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Tokyo",
+            "checkin_date": "2012-12-15",
+            "checkout_date": "2012-12-20",
+            "adults_number": 2,
+            "order_by": "proximity_to_transport",
+            "min_rating": 7
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Cancun, Mexico",
+            "checkin_date": "2023-10-18",
+            "checkout_date": "2023-10-25",
+            "adults_number": 2,
+            "children_number": 2,
+            "order_by": "popularity",
+            "min_rating": 4,
+            "max_price": 500
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Sydney",
+            "checkin_date": "2002-02-01",
+            "checkout_date": "2002-02-07",
+            "adults_number": 3,
+            "min_rating": 9
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2024-03-25",
+            "checkout_date": "2024-03-30",
+            "adults_number": 2,
+            "min_rating": 3,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Rome",
+            "checkin_date": "2024-06-20",
+            "checkout_date": "2024-06-27",
+            "adults_number": 2,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Dubai",
+            "checkin_date": "2032-11-14",
+            "checkout_date": "2032-11-21",
+            "adults_number": 2,
+            "min_rating": 5,
+            "order_by": "rating"
+        }
+    },
+    {
+        "name": "search_hotels_tool",
+        "arguments": {
+            "location": "Berlin",
+            "checkin_date": "2023-00-01",
+            "checkout_date": "2023-0o-05",
+            "adults_number": 2,
+            "min_rating": 7,
+            "order_by": "rating"
+        }
+    }
+]
